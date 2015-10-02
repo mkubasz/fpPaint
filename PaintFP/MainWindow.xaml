@@ -1,0 +1,133 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PaintFP"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" x:Name="MyPaint" x:Class="PaintFP.MainWindow"
+        mc:Ignorable="d"
+        Title="PaintFP" Height="350" Width="670.267" Background="White"
+    MinHeight="350" MinWidth="670"
+         WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,0,-0.2">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="98*"/>
+        </Grid.RowDefinitions>
+        <Grid Margin="0,27,0,-0.2" Grid.RowSpan="2">
+            <Canvas x:Name="canvas" Margin="0,0,0,-0.2" MouseDown="canvas_MouseDown" MouseMove="canvas_MouseMove" MouseUp="canvas_MouseUp" MouseLeftButtonDown="Canvas_OnMouseLeftButtonDown" MouseLeftButtonUp="Canvas_OnMouseLeftButtonUp" Background="White" RenderTransformOrigin="20,20">
+
+            </Canvas>
+        </Grid>
+        <Menu x:Name="menu" Height="27" VerticalAlignment="Top" HorizontalAlignment="Left" Width="155">
+            <MenuItem Header="Files" Height="27" Width="42" Background="#FFF0F0F0">
+                <MenuItem Header="Open" HorizontalAlignment="Left" Width="139.2" Click="MenuOpen_Click"/>
+                <MenuItem Header="Save" HorizontalAlignment="Left" Width="139.2" Click="MenuSave_Click"/>
+                <MenuItem Header="Exit" HorizontalAlignment="Left" Width="139.2" Click="MenuExit_Click"/>
+            </MenuItem>
+            <MenuItem Header="View">
+                <MenuItem Header="Vertical/Horizontal" Margin="0,0,-48.8,0" Click="MenuRotate_Click"/>
+            </MenuItem>
+            <MenuItem Header="Edit">
+                <MenuItem Header="90 left arc" HorizontalAlignment="Left" Click="LeftRotate_Click" Width="139.2"/>
+                <MenuItem Header="90 right arc" HorizontalAlignment="Left" Click="RightRotate_Click" Width="139.2"/>
+                <MenuItem Header="180 arc" HorizontalAlignment="Left" Click="HalfRotate_Click" Width="139.2"/>
+            </MenuItem>
+            <MenuItem Header="Help">
+                <MenuItem Header="About" HorizontalAlignment="Left" Width="139.2" Click="MenuAbout_Click"/>
+            </MenuItem>
+        </Menu>
+        <ToolBarTray Height="27" Margin="155,0,0,0" VerticalAlignment="Top" Background="#FFF0F0F0">
+            <ToolBar x:Name="toolBar" Margin="0,0,-499,-14.2" Background="#FFF0F0F0" Height="27" VerticalAlignment="Top">
+                <Button x:Name="btnPencil" VerticalAlignment="Stretch" Width="32" Margin="0,0,0,0.4" Click="btnPencil_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="Resourses/pencil.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="btnLine" VerticalAlignment="Stretch" Width="30" Margin="0,0,0,0.4" Click="btnLine_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Resourses/stock_draw_line.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="btnCirlce" VerticalAlignment="Stretch" Width="28" Margin="0,0,0,0.4" Click="btnCirlce_Click" RenderTransformOrigin="0.5,0.5">
+                    <Button.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Button.RenderTransform>
+                    <Button.Background>
+                        <ImageBrush ImageSource="Resourses/stock_draw_circle_unfilled.png" Stretch="None"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="btnRectangle" Height="22" VerticalAlignment="Top" Width="37" Click="btnRectangle_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Resourses/stock_draw_rectangle_unfilled.png" Stretch="None"/>
+                    </Button.Background>
+                </Button>
+                <xctk:ColorPicker x:Name="colorPicker"  Height="22" VerticalAlignment="Top" Width="66" Background="Black"/>
+                <Button x:Name="btnUndo"  Height="22" VerticalAlignment="Top" Width="35" Click="btnUndo_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Resourses/edit_undo.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="btnRedo"  Height="27" VerticalAlignment="Top" Width="34" Click="btnRedo_Click" Margin="0,0,0,-4.6">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Resourses/edit_redo(1).png">
+                            <ImageBrush.RelativeTransform>
+                                <TransformGroup>
+                                    <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                                    <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                                    <RotateTransform CenterY="0.5" CenterX="0.5"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </ImageBrush.RelativeTransform>
+                        </ImageBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="btnFill" Content="" VerticalAlignment="Stretch" Width="26" Margin="0,0,0,0.4" Click="btnFill_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Resourses/fill.png" Stretch="None"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="btnErase" VerticalAlignment="Stretch" Width="32" Margin="0,0,0,0.4" Click="btnErase_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Resourses/erase.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="btnSelect" VerticalAlignment="Stretch" Width="34" Click="BtnSelect_OnClick" Margin="0,0,0,-4.6">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Resourses/select.png" Stretch="None">
+                            <ImageBrush.RelativeTransform>
+                                <TransformGroup>
+                                    <ScaleTransform CenterY="0.5" CenterX="0.5" ScaleX="0.8" ScaleY="0.8"/>
+                                    <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                                    <RotateTransform CenterY="0.5" CenterX="0.5"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </ImageBrush.RelativeTransform>
+                        </ImageBrush>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="btnNew" VerticalAlignment="Stretch" Width="30" Click="btnNew_Click" Margin="0,-10,0,-13.6">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Resourses/new(1).png" Stretch="None">
+                            <ImageBrush.RelativeTransform>
+                                <TransformGroup>
+                                    <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                                    <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                                    <RotateTransform CenterY="0.5" CenterX="0.5"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </ImageBrush.RelativeTransform>
+                        </ImageBrush>
+                    </Button.Background>
+                </Button>
+
+            </ToolBar>
+        </ToolBarTray>
+
+
+    </Grid>
+</Window>
