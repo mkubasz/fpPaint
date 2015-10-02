@@ -18,6 +18,7 @@ namespace PaintFP
 	/// </summary>
 	public partial class MainWindow : Window
 	{
+		private const int MOVE_MARGIN = 27;
 		private BitmapSource _bitmap;
 		private CacheMode _cacheMode;
 		private bool _capture;
@@ -103,7 +104,7 @@ namespace PaintFP
 		{
 			if (e.ButtonState == MouseButtonState.Pressed && _drawName != DrawName.Selected)
 			{
-				_startingPoint = new Point(e.GetPosition(this).X, e.GetPosition(this).Y - 27);
+				_startingPoint = new Point(e.GetPosition(this).X, e.GetPosition(this).Y - MOVE_MARGIN);
 			}
 			if (e.ButtonState == MouseButtonState.Pressed && _shapeDraw == null && _drawName != DrawName.Selected)
 			{
@@ -133,7 +134,7 @@ namespace PaintFP
 				}
 
 
-				_shapeDraw.Draw(new Point(e.GetPosition(this).X, e.GetPosition(this).Y - 27), _startingPoint,
+				_shapeDraw.Draw(new Point(e.GetPosition(this).X, e.GetPosition(this).Y - MOVE_MARGIN), _startingPoint,
 					new SolidColorBrush(color));
 				if (_drawName == DrawName.Pencil || _drawName == DrawName.Eraser)
 				{
@@ -143,7 +144,7 @@ namespace PaintFP
 					canvas.Children.Add(_shapeDraw.GetShape());
 
 					RemoveLogicalChild(canvas);
-					_startingPoint = new Point(e.GetPosition(this).X, e.GetPosition(this).Y - 27);
+					_startingPoint = new Point(e.GetPosition(this).X, e.GetPosition(this).Y - MOVE_MARGIN);
 				}
 			}
 		}
@@ -306,7 +307,7 @@ namespace PaintFP
 		{
 			if (e.ButtonState == MouseButtonState.Pressed && _drawName == DrawName.Selected)
 			{
-				_startingPoint = new Point(e.GetPosition(this).X, e.GetPosition(this).Y - 27);
+				_startingPoint = new Point(e.GetPosition(this).X, e.GetPosition(this).Y - MOVE_MARGIN);
 				_source = ((Shape) ((Canvas) sender).Children[((Canvas) sender).Children.Count - 1]);
 				Mouse.Capture(_source);
 				_capture = true;
