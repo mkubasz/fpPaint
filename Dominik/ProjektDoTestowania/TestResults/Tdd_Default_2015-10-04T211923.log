@@ -1,0 +1,59 @@
+﻿VS filter: testpath:TestAssembly:Tdd/Feature:SpecFlowFeature1/Scenario:Add+two+numbers
+Appdomain Disposed
+Test Suite Dump
+#0: Tdd/Default - 
+#1: Default - 
+#2: Tdd - 
+#3: SpecFlowFeature1 - 
+#4: Add two numbers - TestAssembly:Tdd/Feature:SpecFlowFeature1/Scenario:Add+two+numbers
+End: Test Suite Dump
+Scheduler: considering #4 for thread #0
+Scheduler: using #4 for thread #0
+Test #4 is scheduled for thread #0
+Thread #0: creating new test thread executor for Tdd, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\Mateusz\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.2.0\tools\TechTalk.SpecRun.Framework.Executor.dll
+Test #4/0 is started on thread #0
+B:Given I have entered 5 into the calculator
+T:binding error: Ambiguous step definitions found for step 'Given I have entered 5 into the calculator': SpecFlowFeature1Steps.GivenIHaveEnteredIntoTheCalculator(Int32), SpecFlowFeature1Steps.GivenIHaveEnteredIntoTheCalculatorSecond(Int32)
+B:Given I have entered 7 into the calculator
+T:binding error: Ambiguous step definitions found for step 'Given I have entered 7 into the calculator': SpecFlowFeature1Steps.GivenIHaveEnteredIntoTheCalculator(Int32), SpecFlowFeature1Steps.GivenIHaveEnteredIntoTheCalculatorSecond(Int32)
+B:When I called add
+T:skipped because of previous errors
+B:Then the result should be 12
+T:skipped because of previous errors
+Scheduler: dequeuing a rescheduled item: 4
+Scheduler: considering #4 for thread #0
+Scheduler: using #4 for thread #0
+Test #4 is scheduled for thread #0
+Test #4 is finished on thread #0 as Failed within 0,3816507 seconds
+Test #4/1 is started on thread #0
+B:Given I have entered 5 into the calculator
+T:binding error: Ambiguous step definitions found for step 'Given I have entered 5 into the calculator': SpecFlowFeature1Steps.GivenIHaveEnteredIntoTheCalculator(Int32), SpecFlowFeature1Steps.GivenIHaveEnteredIntoTheCalculatorSecond(Int32)
+B:Given I have entered 7 into the calculator
+T:binding error: Ambiguous step definitions found for step 'Given I have entered 7 into the calculator': SpecFlowFeature1Steps.GivenIHaveEnteredIntoTheCalculator(Int32), SpecFlowFeature1Steps.GivenIHaveEnteredIntoTheCalculatorSecond(Int32)
+B:When I called add
+T:skipped because of previous errors
+B:Then the result should be 12
+T:skipped because of previous errors
+Scheduler: dequeuing a rescheduled item: 4
+Scheduler: considering #4 for thread #0
+Scheduler: using #4 for thread #0
+Test #4 is scheduled for thread #0
+Test #4 is finished on thread #0 as Failed within 0,0025 seconds
+Test #4/2 is started on thread #0
+B:Given I have entered 5 into the calculator
+T:binding error: Ambiguous step definitions found for step 'Given I have entered 5 into the calculator': SpecFlowFeature1Steps.GivenIHaveEnteredIntoTheCalculator(Int32), SpecFlowFeature1Steps.GivenIHaveEnteredIntoTheCalculatorSecond(Int32)
+B:Given I have entered 7 into the calculator
+T:binding error: Ambiguous step definitions found for step 'Given I have entered 7 into the calculator': SpecFlowFeature1Steps.GivenIHaveEnteredIntoTheCalculator(Int32), SpecFlowFeature1Steps.GivenIHaveEnteredIntoTheCalculatorSecond(Int32)
+B:When I called add
+T:skipped because of previous errors
+B:Then the result should be 12
+T:skipped because of previous errors
+Test #4 is finished on thread #0 as Failed within 0,0030174 seconds
+Appdomain Disposed
+Total: 1 (test executions: 3)
+Succeeded: 0
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 1

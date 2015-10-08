@@ -1,0 +1,5 @@
+M:\Projects\Dominik\ProjektDoTestowania\ProjektDoTestowania\bin\Debug\ProjektDoTestowania.dll
+M:\Projects\Dominik\ProjektDoTestowania\ProjektDoTestowania\bin\Debug\ProjektDoTestowania.pdb
+M:\Projects\Dominik\ProjektDoTestowania\ProjektDoTestowania\obj\Debug\ProjektDoTestowania.csprojResolveAssemblyReference.cache
+M:\Projects\Dominik\ProjektDoTestowania\ProjektDoTestowania\obj\Debug\ProjektDoTestowania.dll
+M:\Projects\Dominik\ProjektDoTestowania\ProjektDoTestowania\obj\Debug\ProjektDoTestowania.pdb

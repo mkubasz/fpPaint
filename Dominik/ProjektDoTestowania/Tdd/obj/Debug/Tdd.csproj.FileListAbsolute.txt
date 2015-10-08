@@ -1,0 +1,14 @@
+M:\Projects\Dominik\ProjektDoTestowania\Tdd\obj\Debug\Tdd.csprojResolveAssemblyReference.cache
+M:\Projects\Dominik\ProjektDoTestowania\Tdd\bin\Debug\Tdd.dll
+M:\Projects\Dominik\ProjektDoTestowania\Tdd\bin\Debug\Tdd.pdb
+M:\Projects\Dominik\ProjektDoTestowania\Tdd\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+M:\Projects\Dominik\ProjektDoTestowania\Tdd\bin\Debug\ProjektDoTestowania.dll
+M:\Projects\Dominik\ProjektDoTestowania\Tdd\bin\Debug\ProjektDoTestowania.pdb
+M:\Projects\Dominik\ProjektDoTestowania\Tdd\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+M:\Projects\Dominik\ProjektDoTestowania\Tdd\obj\Debug\Tdd.dll
+M:\Projects\Dominik\ProjektDoTestowania\Tdd\obj\Debug\Tdd.pdb
+M:\Projects\Dominik\ProjektDoTestowania\Tdd\bin\Debug\Default.srprofile
+M:\Projects\Dominik\ProjektDoTestowania\Tdd\bin\Debug\Tdd.dll.config
+M:\Projects\Dominik\ProjektDoTestowania\Tdd\bin\Debug\SpecRun.SpecFlowPlugin.dll
+M:\Projects\Dominik\ProjektDoTestowania\Tdd\bin\Debug\TechTalk.SpecFlow.dll
+M:\Projects\Dominik\ProjektDoTestowania\Tdd\bin\Debug\TechTalk.SpecRun.dll

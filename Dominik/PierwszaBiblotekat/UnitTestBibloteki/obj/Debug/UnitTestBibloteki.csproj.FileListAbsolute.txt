@@ -1,0 +1,16 @@
+M:\Projects\Dominik\PierwszaBiblotekat\UnitTestBibloteki\bin\Debug\UnitTestBibloteki.dll
+M:\Projects\Dominik\PierwszaBiblotekat\UnitTestBibloteki\bin\Debug\UnitTestBibloteki.pdb
+M:\Projects\Dominik\PierwszaBiblotekat\UnitTestBibloteki\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+M:\Projects\Dominik\PierwszaBiblotekat\UnitTestBibloteki\bin\Debug\PierwszaBiblotekat.dll
+M:\Projects\Dominik\PierwszaBiblotekat\UnitTestBibloteki\bin\Debug\PierwszaBiblotekat.pdb
+M:\Projects\Dominik\PierwszaBiblotekat\UnitTestBibloteki\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+M:\Projects\Dominik\PierwszaBiblotekat\UnitTestBibloteki\obj\Debug\UnitTestBibloteki.csprojResolveAssemblyReference.cache
+M:\Projects\Dominik\PierwszaBiblotekat\UnitTestBibloteki\obj\Debug\UnitTestBibloteki.dll
+M:\Projects\Dominik\PierwszaBiblotekat\UnitTestBibloteki\obj\Debug\UnitTestBibloteki.pdb
+M:\Projects\Dominik\PierwszaBiblotekat\UnitTestBibloteki\bin\Debug\UnitTestBibloteki.dll.config
+M:\Projects\Dominik\PierwszaBiblotekat\UnitTestBibloteki\bin\Debug\nunit.framework.dll
+M:\Projects\Dominik\PierwszaBiblotekat\UnitTestBibloteki\bin\Debug\TechTalk.SpecFlow.dll
+M:\Projects\Dominik\PierwszaBiblotekat\UnitTestBibloteki\bin\Debug\nunit.framework.xml
+M:\Projects\Dominik\PierwszaBiblotekat\UnitTestBibloteki\bin\Debug\Default.srprofile
+M:\Projects\Dominik\PierwszaBiblotekat\UnitTestBibloteki\bin\Debug\SpecRun.SpecFlowPlugin.dll
+M:\Projects\Dominik\PierwszaBiblotekat\UnitTestBibloteki\bin\Debug\TechTalk.SpecRun.dll

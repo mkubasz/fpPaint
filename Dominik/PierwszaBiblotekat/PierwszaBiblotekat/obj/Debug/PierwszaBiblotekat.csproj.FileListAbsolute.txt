@@ -1,0 +1,5 @@
+M:\Projects\Dominik\PierwszaBiblotekat\PierwszaBiblotekat\bin\Debug\PierwszaBiblotekat.dll
+M:\Projects\Dominik\PierwszaBiblotekat\PierwszaBiblotekat\bin\Debug\PierwszaBiblotekat.pdb
+M:\Projects\Dominik\PierwszaBiblotekat\PierwszaBiblotekat\obj\Debug\PierwszaBiblotekat.csprojResolveAssemblyReference.cache
+M:\Projects\Dominik\PierwszaBiblotekat\PierwszaBiblotekat\obj\Debug\PierwszaBiblotekat.dll
+M:\Projects\Dominik\PierwszaBiblotekat\PierwszaBiblotekat\obj\Debug\PierwszaBiblotekat.pdb

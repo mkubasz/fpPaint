@@ -1,0 +1,31 @@
+﻿VS filter: testpath:TestAssembly:UnitTestProject/Feature:SpecFlowFeature1/Scenario:Test+of+search+mechanism
+Appdomain Disposed
+Test Suite Dump
+#0: UnitTestProject/Default - 
+#1: Default - 
+#2: UnitTestProject - 
+#3: SpecFlowFeature1 - 
+#4: Test of search mechanism - TestAssembly:UnitTestProject/Feature:SpecFlowFeature1/Scenario:Test+of+search+mechanism
+End: Test Suite Dump
+Scheduler: considering #4 for thread #0
+Scheduler: using #4 for thread #0
+Test #4 is scheduled for thread #0
+Thread #0: creating new test thread executor for UnitTestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\Mateusz\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.2.0\tools\TechTalk.SpecRun.Framework.Executor.dll
+Test #4/0 is started on thread #0
+B:Given I have entered "koparka" into the serch label
+T:pending: SpecFlowFeature1Steps.GivenIHaveEnteredIntoTheSerchLabel("koparka")
+B:When I click serch button
+T:skipped because of previous errors
+B:Then display result's list into screen
+T:skipped because of previous errors
+T:Pending: One or more step definitions are not implemented yet.
+T:  SpecFlowFeature1Steps.GivenIHaveEnteredIntoTheSerchLabel("koparka")
+Test #4 is finished on thread #0 as Pending within 0,3817339 seconds
+Appdomain Disposed
+Total: 1
+Succeeded: 0
+Ignored: 0
+Pending: 1
+Skipped: 0
+Failed: 0

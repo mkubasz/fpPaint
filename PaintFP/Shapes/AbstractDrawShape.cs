@@ -9,6 +9,7 @@ namespace PaintFP.Shapes
 {
 	public abstract class AbstractDrawShape 
 	{
+
 		protected Dictionary<DrawName, Func<Shape>> ShapesSet;
 		protected Shape shape;
 		protected Point point = new Point();

@@ -1,0 +1,31 @@
+﻿VS filter: testpath:TestAssembly:UnitTestBibloteki/Feature:SpecFlowFeature1/Scenario:Add+two+numbers
+Appdomain Disposed
+Test Suite Dump
+#0: UnitTestBibloteki/Default - 
+#1: Default - 
+#2: UnitTestBibloteki - 
+#3: SpecFlowFeature1 - 
+#4: Add two numbers - TestAssembly:UnitTestBibloteki/Feature:SpecFlowFeature1/Scenario:Add+two+numbers
+End: Test Suite Dump
+Scheduler: considering #4 for thread #0
+Scheduler: using #4 for thread #0
+Test #4 is scheduled for thread #0
+Thread #0: creating new test thread executor for UnitTestBibloteki, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\Mateusz\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.2.0\tools\TechTalk.SpecRun.Framework.Executor.dll
+Test #4/0 is started on thread #0
+B:Given I have entered 6 into the class
+T:done: SpecFlowFeature1Steps.GivenIHaveEnteredIntoTheClass(6) (0,0s)
+B:Given I have entered 5 into the class too
+T:done: SpecFlowFeature1Steps.GivenIHaveEnteredIntoTheClassToo(5) (0,0s)
+B:When I call method
+T:done: SpecFlowFeature1Steps.WhenICallMethod() (0,0s)
+B:Then the result should be 11
+T:done: SpecFlowFeature1Steps.ThenTheResultShouldBe(11) (0,0s)
+Test #4 is finished on thread #0 as Succeeded within 0,3996624 seconds
+Appdomain Disposed
+Total: 1
+Succeeded: 1
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 0
